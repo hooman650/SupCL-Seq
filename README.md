@@ -11,6 +11,11 @@ This package can be easily run on almost all of the transformer models in [`Hugg
 
 ![SupCL-Seq](SupCLSeq.png)
 
+## GLUE Benchmark BERT SupCL-SEQ
+The table below reports the improvements over naive finetuning of BERT model on GLUE benchmark. We employed `[CLS]` token during training and expect that using the `mean` would further improve these results.
+
+![Glue](Glue.PNG)
+
 ## Installation
 
 1. First you need to install one of, or both, TensorFlow 2.0 and PyTorch. Please refer to [TensorFlow installation page](https://www.tensorflow.org/install/pip), [PyTorch installation page](https://pytorch.org/) and/or Flax installation page regarding the specific install command for your platform.
