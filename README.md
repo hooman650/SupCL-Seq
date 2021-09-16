@@ -13,7 +13,7 @@ This package can be easily run on almost all of the transformer models in [`Hugg
 
 ## Installation
 
-1. First you need to install one of, or both, TensorFlow 2.0 and PyTorch. Please refer to TensorFlow installation page, PyTorch installation page and/or Flax installation page regarding the specific install command for your platform.
+1. First you need to install one of, or both, TensorFlow 2.0 and PyTorch. Please refer to [TensorFlow installation page](https://www.tensorflow.org/install/pip), [PyTorch installation page](https://pytorch.org/) and/or Flax installation page regarding the specific install command for your platform.
 
 2. Second step:
 
