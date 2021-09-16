@@ -12,7 +12,7 @@ This package can be easily run on almost all of the transformer models in [`Hugg
 
 ![SupCL-Seq](SupCLSeq.png)
 
-### Table of Contents  
+## Table of Contents  
 [GLUE Benchmark BERT SupCL-SEQ](#glue-benchmark-bert-supcl-seq)  
 
 [Installation](#installation) 
