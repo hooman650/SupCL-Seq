@@ -43,3 +43,7 @@ SupCL_trainer = SupCsTrainer.SupCsTrainer(
 
 ## Run on GLUE
 In order to evaluate the method on GLUE benchmark please see the [`glue.ipynb`](./examples/glue.ipynb)
+
+## References
+[1] [Supervised Contrastive Learning](https://arxiv.org/abs/2004.11362)
+[2] [SimCSE: Simple Contrastive Learning of Sentence Embeddings](https://arxiv.org/abs/2104.08821)
