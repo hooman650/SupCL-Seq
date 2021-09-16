@@ -2,10 +2,15 @@
 
 ##### Table of Contents  
 [GLUE Benchmark BERT SupCL-SEQ](#glue-benchmark-bert-supcl-seq)  
+
 [Installation](#installation) 
+
 [Usage](#usage)
+
 [Run on GLUE](#run-on-glue)
+
 [How to Cite](#how-to-cite)
+
 [References](#references)
 
 [Supervised Contrastive Learning for Downstream Optimized Sequence representations (**SupCS-Seq**)](https://arxiv.org/abs/2109.07424) accepted to be published in EMNLP 2021, extends the supervised contrastive learning from computer vision to the optimization of sequence representations in NLP. By altering the dropout mask probability in standard Transformer architectures (e.g. *BERT_base*), for every representation (anchor), we generate augmented altered views. A supervised contrastive loss is then utilized to maximize the system’s capability of pulling together similar samples (e.g. anchors and their altered views) and pushing apart the samples belonging to the other classes. Despite its simplicity, SupCL-Seq leads to large gains in many sequence classification tasks on the GLUE benchmark compared to a standard *BERT_base*, including 6% absolute improvement on CoLA, 5.4% on MRPC, 4.7% on RTE and 2.6% on STS-B.
