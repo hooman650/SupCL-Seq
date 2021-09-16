@@ -7,7 +7,7 @@ Supervised Contrastive Learning for Downstream Optimized Sequence representation
 Simply follow:
 
 ```bash
-pip install SupCL-Seq
+$ pip install SupCL-Seq
 ```
 
 ## Usage
