@@ -30,4 +30,6 @@ SupCL_trainer = SupCsTrainer(
 
 ```
 
+## Run on GLUE
+In order to evaluate the method on GLUE benchmark please see the [`glue.ipynb`](./examples/glue.ipynb)
 
