@@ -22,9 +22,9 @@ $ pip install SupCL-Seq
 The package builds on the [`trainer`](https://huggingface.co/transformers/main_classes/trainer.html) from [`Huggingface`](https://huggingface.co/):hugs:. Therefore, its use is exactly similar to [`trainer`](https://huggingface.co/transformers/main_classes/trainer.html).
 
 ```python
-from SupCL-Seq import SupCsTrainer.SupCsTrainer
+from SupCL_Seq import SupCsTrainer
 
-SupCL_trainer = SupCsTrainer(
+SupCL_trainer = SupCsTrainer.SupCsTrainer(
             w_drop_out=[0.0,0.05,0.2],      # Number of views and their associated mask drop-out probabilities [Optional]
             temperature= 0.05,              # Temeprature for the contrastive loss function [Optional]
             def_drop_out=0.1,               # Default drop out of the transformer, this is usually 0.1 [Optional]
