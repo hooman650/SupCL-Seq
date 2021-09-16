@@ -41,7 +41,9 @@ $ pip install SupCL-Seq
 ```
 
 ## Usage
-The package builds on the [`trainer`](https://huggingface.co/transformers/main_classes/trainer.html) from [`Huggingface`](https://huggingface.co/):hugs:. Therefore, its use is exactly similar to [`trainer`](https://huggingface.co/transformers/main_classes/trainer.html).
+The package builds on the [`trainer`](https://huggingface.co/transformers/main_classes/trainer.html) from [`Huggingface`](https://huggingface.co/):hugs:. Therefore, its use is exactly similar to [`trainer`](https://huggingface.co/transformers/main_classes/trainer.html). The pipeline works as follows:
+
+1. First employ supervised contrastive learning to constratively optimize sentence embeddings using your annotated data.
 
 ```python
 from SupCL_Seq import SupCsTrainer
@@ -59,6 +61,13 @@ SupCL_trainer = SupCsTrainer.SupCsTrainer(
         )
 
 ```
+
+2. After contrastive training:
+    2.1 Add a linear classification layer to your model
+    2.2 Freeze the base layer
+    2.3 Finetune the linear layer on your annotated data
+
+For detailed implementation see [`glue.ipynb`](./examples/glue.ipynb)
 
 ## Run on GLUE
 In order to evaluate the method on GLUE benchmark please see the [`glue.ipynb`](./examples/glue.ipynb)
