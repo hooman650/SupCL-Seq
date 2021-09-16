@@ -68,7 +68,9 @@ SupCL_trainer = SupCsTrainer.SupCsTrainer(
 2. After contrastive training:
 
     2.1 Add a linear classification layer to your model
+   
     2.2 Freeze the base layer
+    
     2.3 Finetune the linear layer on your annotated data
 
 
