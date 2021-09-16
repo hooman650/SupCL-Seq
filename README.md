@@ -1,6 +1,12 @@
 # SupCL-Seq :book:
 
-__TOC__
+##### Table of Contents  
+[GLUE Benchmark BERT SupCL-SEQ](#glue-benchmark-bert-supcl-seq)  
+[Installation](#installation) 
+[Usage](#usage)
+[Run on GLUE](#run-on-glue)
+[How to Cite](#how-to-cite)
+[References](#references)
 
 [Supervised Contrastive Learning for Downstream Optimized Sequence representations (**SupCS-Seq**)](https://arxiv.org/abs/2109.07424) accepted to be published in EMNLP 2021, extends the supervised contrastive learning from computer vision to the optimization of sequence representations in NLP. By altering the dropout mask probability in standard Transformer architectures (e.g. *BERT_base*), for every representation (anchor), we generate augmented altered views. A supervised contrastive loss is then utilized to maximize the system’s capability of pulling together similar samples (e.g. anchors and their altered views) and pushing apart the samples belonging to the other classes. Despite its simplicity, SupCL-Seq leads to large gains in many sequence classification tasks on the GLUE benchmark compared to a standard *BERT_base*, including 6% absolute improvement on CoLA, 5.4% on MRPC, 4.7% on RTE and 2.6% on STS-B.
 
@@ -51,6 +57,18 @@ SupCL_trainer = SupCsTrainer.SupCsTrainer(
 
 ## Run on GLUE
 In order to evaluate the method on GLUE benchmark please see the [`glue.ipynb`](./examples/glue.ipynb)
+
+## How to Cite
+```bibtex
+@misc{sedghamiz2021supclseq,
+      title={SupCL-Seq: Supervised Contrastive Learning for Downstream Optimized Sequence Representations}, 
+      author={Hooman Sedghamiz and Shivam Raval and Enrico Santus and Tuka Alhanai and Mohammad Ghassemi},
+      year={2021},
+      eprint={2109.07424},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+```
 
 ## References
 [1] [Supervised Contrastive Learning](https://arxiv.org/abs/2004.11362)
