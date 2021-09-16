@@ -1,18 +1,5 @@
 # SupCL-Seq :book:
 
-##### Table of Contents  
-[GLUE Benchmark BERT SupCL-SEQ](#glue-benchmark-bert-supcl-seq)  
-
-[Installation](#installation) 
-
-[Usage](#usage)
-
-[Run on GLUE](#run-on-glue)
-
-[How to Cite](#how-to-cite)
-
-[References](#references)
-
 [Supervised Contrastive Learning for Downstream Optimized Sequence representations (**SupCS-Seq**)](https://arxiv.org/abs/2109.07424) accepted to be published in EMNLP 2021, extends the supervised contrastive learning from computer vision to the optimization of sequence representations in NLP. By altering the dropout mask probability in standard Transformer architectures (e.g. *BERT_base*), for every representation (anchor), we generate augmented altered views. A supervised contrastive loss is then utilized to maximize the system’s capability of pulling together similar samples (e.g. anchors and their altered views) and pushing apart the samples belonging to the other classes. Despite its simplicity, SupCL-Seq leads to large gains in many sequence classification tasks on the GLUE benchmark compared to a standard *BERT_base*, including 6% absolute improvement on CoLA, 5.4% on MRPC, 4.7% on RTE and 2.6% on STS-B.
 
 This package can be easily run on almost all of the transformer models in [`Huggingface`](https://huggingface.co/):hugs: that contain an encoder including but not limited to:
@@ -24,6 +11,19 @@ This package can be easily run on almost all of the transformer models in [`Hugg
 5. And many more!
 
 ![SupCL-Seq](SupCLSeq.png)
+
+### Table of Contents  
+[GLUE Benchmark BERT SupCL-SEQ](#glue-benchmark-bert-supcl-seq)  
+
+[Installation](#installation) 
+
+[Usage](#usage)
+
+[Run on GLUE](#run-on-glue)
+
+[How to Cite](#how-to-cite)
+
+[References](#references)
 
 ## GLUE Benchmark BERT SupCL-SEQ
 The table below reports the improvements over naive finetuning of BERT model on GLUE benchmark. We employed `[CLS]` token during training and expect that using the `mean` would further improve these results.
