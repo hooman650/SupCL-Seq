@@ -9,7 +9,8 @@ This package can be easily run on almost all of the transformer models in [`Hugg
 2. [BERT](https://huggingface.co/transformers/model_doc/bert.html)
 3. [BigBird](https://huggingface.co/transformers/model_doc/bigbird.html)
 4. [RoBerta](https://huggingface.co/transformers/model_doc/roberta.html)
-5. And many more!
+5. [ERNIE](https://huggingface.co/nghuyong/ernie-2.0-large-en)
+6. And many more!
 
 ![SupCL-Seq](SupCLSeq.png)
 
